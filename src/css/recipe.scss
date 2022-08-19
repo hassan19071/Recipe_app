@@ -1,0 +1,57 @@
+.recipe-info{
+    margin: 100px 0;
+    .img{
+        img{
+            object-fit: cover;
+        }
+    }
+    .title{
+        h2{
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 20px 0 5px;
+        }
+    }
+    .category-area{
+        span{
+            font-size: 14px;
+            color: rgb(122, 122, 122);
+        }
+    }
+    .ingredients{
+        background-color: rgb(6, 177, 166);
+        color: #fff;
+        padding:40px 20px;
+        h3{
+            font-size: 21px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        ul{
+            list-style: none;
+            padding: 0 !important;
+            margin-top: 20px;
+           li{
+            margin: 15px 0;
+           }
+        }
+    }
+    .instructions{
+        h3{
+            font-size: 21px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+    .video{
+        a{
+            padding: 10px 40px;
+            background-color: rgb(6, 177, 166);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    }
+}

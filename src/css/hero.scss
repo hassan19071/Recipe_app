@@ -1,0 +1,92 @@
+.header{
+    height: calc(100vh - 70px);
+    @media (max-width:991px) {
+        height: 60vh;
+    }
+    .carousel{
+        height: 100%;
+        .carousel-inner {
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .carousel-caption{
+                    width: 100%;
+                    top: 50%;
+                    left: 0%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                    h1{
+                        font-size: calc(2rem + 2vw);
+                        font-weight: 600;
+                        color: #eee;
+                        text-transform: uppercase;
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin: 20px 0;
+                    }
+                }
+                .overlay{
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 8, 8, 0.668);
+                    z-index: 1;
+                }
+            }
+        }
+        .prev,.next{
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(6, 177, 166);
+            z-index: 3;
+            border-radius: 50%;
+            transition: .3s;
+            right: 20px !important;
+            left: auto;
+        }
+        .next{
+            transform: translateY(100%);
+        }
+        .prev{
+            transform: translateY(-10%);
+        }
+    }
+}
+
+.sec-head{
+    padding: 120px 0;
+    background-image: url("../imgs/hero-bg2.jpg");
+    background-size: cover;
+    position: relative;
+    .overlay{
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 8, 8, 0.668);
+        z-index: 1;
+        position: absolute;
+    }
+    .title{
+        position: relative;
+        z-index: 3;
+        h1{
+            color: #eee;
+            font-size: calc(2rem + 1vw);
+            text-transform: uppercase;
+        }
+        p{
+            color: #eee;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+}

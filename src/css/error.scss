@@ -1,0 +1,25 @@
+.error{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 400px;
+        @media (max-width:720px) {
+            width: 250px;
+        }
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0 60px;
+        text-transform: uppercase;
+    }
+    a{
+        padding: 10px 30px;
+        background-color: rgb(6, 177, 166);
+        color: #fff !important;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,29 @@
+.search-section{
+    margin: 40px 0;
+    .form{
+       form{
+        width: 60%;
+        @media (max-width:720px) {
+            width: 90%;
+        }
+        margin: auto;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        input{
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 10px 20px;
+            border: 1.5px solid #999;
+            border-radius: 10px 0 0px 10px;
+        }
+        button{
+            padding: 15px 20px;
+            border: none;
+            background-color: #06b1a6;
+            color: #fff;
+        }
+       }
+    }
+}

@@ -1,0 +1,42 @@
+.food-results{
+    margin: 100px 0;
+    .head{
+        margin-bottom: 40px;
+        h3{
+            font-size: 25px;
+        }
+    }
+    .food{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        min-height: 500px;
+        @media (max-width:720px) {
+            min-height: 350px;
+            padding-bottom: 30px;
+        }
+        img{
+            object-fit: cover;
+        }
+        .title{
+            h3{
+                font-size: 22px;
+                text-transform: capitalize;
+                margin: 40px 0;
+            }
+        }
+        a{
+            background-color: rgb(6, 177, 166);
+            border: none;
+            padding: 7px 30px;
+            color: #fff;
+            font-size: 17px;
+            text-decoration: none;
+        }
+    }
+    .sad-img{
+        margin: auto;
+        width: 200px; 
+        img{
+            width: 100%; 
+        }
+    }
+}
