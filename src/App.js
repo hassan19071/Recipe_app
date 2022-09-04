@@ -17,9 +17,9 @@ function App() {
   return (
     <div className="App">
       {loading ? <Loading /> : ""}
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_UR}>
         <Routes>
-          <Route path="" element={<Home />}></Route>
+          <Route path="/Recipe_app" element={<Home />}></Route>
           <Route path="recipe/:name" element={<Recipe />}></Route>
           <Route path="area/:area" element={<Area />}></Route>
           <Route path="category/:category" element={<Category />}></Route>

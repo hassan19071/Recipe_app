@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg py-lg-0 py-3">
       <div className="container">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/Recipe_app">
           Rec<span>ipe</span>
         </NavLink>
         <button
@@ -54,7 +54,7 @@ const Navbar = () => {
         >
           <ul className="navbar-nav py-lg-0 py-3">
             <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/">
+              <NavLink className="nav-link" aria-current="page" to="/Recipe_app">
                 Home
               </NavLink>
             </li>

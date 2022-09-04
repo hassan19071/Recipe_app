@@ -11,7 +11,7 @@ const Error = () => {
                     <img src={img}/>
                 </div>
                 <h2>Page Is Not Found</h2>
-                <NavLink to="/">Back To Home</NavLink>
+                <NavLink to="/Recipe_app">Back To Home</NavLink>
             </div>
         </div>
      );
