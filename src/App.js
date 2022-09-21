@@ -17,12 +17,12 @@ function App() {
   return (
     <div className="App">
       {loading ? <Loading /> : ""}
-      <BrowserRouter basename={process.env.PUBLIC_UR}>
+      <BrowserRouter>
         <Routes>
-          <Route path="/Recipe_app" element={<Home />}></Route>
-          <Route path="recipe/:name" element={<Recipe />}></Route>
-          <Route path="area/:area" element={<Area />}></Route>
-          <Route path="category/:category" element={<Category />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/recipe/:name" element={<Recipe />}></Route>
+          <Route path="/area/:area" element={<Area />}></Route>
+          <Route path="/category/:category" element={<Category />}></Route>
           <Route path="*" element={<Error/>}></Route>
         </Routes>
       </BrowserRouter>

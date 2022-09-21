@@ -7,18 +7,18 @@ const AreaFood = () => {
   let [meal, setMeal] = useState([]);
   let [isLoading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(true);
     let getFoods = async () => {
       let res = await fetch(
         `https://www.themealdb.com/api/json/v1/1/filter.php?a=${areaName}`
       )
         .then((res) => res.json())
-        .then((data) => setMeal(data.meals));
-      return setMeal;
+        .then((data) => setMeal(data.meals))
+        .catch((err) => console.log(err))
+        .finally(() => setLoading(false));
+      return res;
     };
-    setLoading(false);
-    return getFoods;
-  });
+    getFoods();
+  },[areaName]);
 
   return (
     <div className="area-food">

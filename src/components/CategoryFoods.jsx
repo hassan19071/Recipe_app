@@ -13,12 +13,13 @@ const CategoryFood = () => {
         `https://www.themealdb.com/api/json/v1/1/filter.php?c=${CategoryName}`
       )
         .then((res) => res.json())
-        .then((data) => setMeal(data.meals));
-      return setMeal;
+        .then((data) => setMeal(data.meals))
+        .catch((err)=> console.log(err))
+        .finally(()=> setLoading(false));
+      return res;
     };
-    setLoading(false);
-    return getFoods;
-  });
+     getFoods();
+  },[CategoryName]);
 
   return (
     <div className="area-food">

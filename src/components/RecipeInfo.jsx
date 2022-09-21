@@ -15,9 +15,9 @@ const RecipeInfo = () => {
       )
         .then((res) => res.json())
         .then((data) => setMeal(data.meals));
-      return setMeal;
+      return res;
     };
-    return getFoods;
+     getFoods();
   }, []);
 
   return (

@@ -28,7 +28,7 @@ const Home = () => {
             setLoding(false);
             return setFood;
           };
-          return getFoods;
+           getFoods();
     },[]);
 
     return ( 
