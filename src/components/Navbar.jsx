@@ -25,10 +25,10 @@ const Navbar = () => {
     return setArea(results);
   };
   useEffect(() => {
-    return getCategories;
+     getCategories();
   }, []);
   useEffect(() => {
-    return getAreas;
+     getAreas();
   }, []);
 
   return (
